@@ -1,0 +1,40 @@
+.wcSectionHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.wcSectionKicker {
+  margin: 0 0 0.35rem 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.wcSectionTitle {
+  margin: 0;
+  font-size: clamp(1.25rem, 1.1rem + 1vw, 2rem);
+  letter-spacing: -0.02em;
+}
+
+.wcSectionNote {
+  margin: 0.6rem 0 0 0;
+  color: var(--muted);
+  max-width: 62ch;
+  line-height: 1.55;
+}
+
+.wcSectionRight {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .wcSectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
